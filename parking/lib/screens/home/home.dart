@@ -33,7 +33,9 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: customAppBar('ParkControl'),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pushNamed(context, 'new_ticket');
+        },
         tooltip: 'Registrar uma novo ticket',
         child: const Icon(Icons.add),
       ),
